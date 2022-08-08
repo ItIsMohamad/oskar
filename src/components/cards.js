@@ -22,6 +22,7 @@ export default function Cards(props){
         <h2>{props.name}</h2>
         <h4>{props.date}</h4>
         <p>{props.description}</p>
+        <button className='but'>button</button>
         </div>
        
         </div>

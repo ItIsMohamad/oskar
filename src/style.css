@@ -69,6 +69,12 @@ hr{
     
 }
 
+.but{
+    
+    border: 2px solid #FC3907;
+    border-radius: 20px;
+}
+
 
 @media all and (max-width:540px){
     .card{
@@ -91,6 +97,8 @@ hr{
         justify-content: flex-end;
     }
     .photo{
+
+        
         
       
         
