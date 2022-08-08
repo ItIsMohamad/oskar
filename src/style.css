@@ -1,0 +1,118 @@
+.header{
+    display: flex;
+    gap:10px;
+    background-color: tomato;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+
+.header-logo{
+    width:40px;
+}
+
+.header-text{
+    color:white
+}
+
+
+.card{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: top;
+    padding: 20px;
+   
+    
+}
+
+.tag{
+    width:20px;
+    height: auto;
+}
+
+.photo{
+    width: 15rem;
+    border-radius:4px;
+}
+
+.first-line{
+    margin-top:12px;
+    display: flex;
+    align-items:flex-start;
+    gap:10px;
+}
+
+hr{
+    border-color: black;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    margin: 0px 20px;
+}
+
+.first-line > div> a{
+   font-weight: 100;
+    color: black;
+    font-size: 15px;
+}
+
+.country{
+    
+    font-weight: 500;
+    margin-right: 20px;
+ 
+   
+
+    
+}
+
+
+@media all and (max-width:540px){
+    .card{
+        
+        display: grid;
+        grid-template-areas:
+        "i i i i"
+        "c c c c"
+        "t t t t"
+        "d d d d"
+        "t t t t"
+        ;
+        justify-content: center;
+        margin-top:-20px;
+    }
+    .photo-div{
+       
+        margin:0px -20px ;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .photo{
+        
+      
+        
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 0;
+
+    }
+    .first-line{
+        grid-area: c;
+    }
+    .country{
+        grid-area: t;
+    }
+
+    .hr-1{
+        display: none;
+    }
+
+
+    
+    
+    
+}
